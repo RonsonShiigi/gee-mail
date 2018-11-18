@@ -1,6 +1,25 @@
-img{
+#envelope{
     height: 75px;
     width: 75px;
+}
+
+#searchBar{
+    width:500px;
+    height:60px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#search{
+    width:500px;
+    height:50px;
+    font-size:30px;
+}
+
+#glass{
+    display:inline-block;
+    height:18px;
+    width:18px; 
 }
 
 #topBar{
