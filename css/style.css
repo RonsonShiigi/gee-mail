@@ -8,6 +8,7 @@
     height:60px;
     margin-left:auto;
     margin-right:auto;
+    margin-top:-55px;
     position: relative;
 }
 
@@ -19,11 +20,11 @@
 
 
 #glass{
-    display:inline-block;
-    height:18px;
-    width:18px; 
-    align-content: right;
+    height:30px;
+    width:30    px; 
     position:absolute;
+    margin-left:450px;
+    margin-top:10px;
     top:0px;
     left:0px;
 }
