@@ -61,3 +61,14 @@
 .sidebarItems:hover{
     background-color: gray;
 }
+
+/* types of email stuff */
+
+.typeBox{
+    font-size:25px;
+    border:solid;
+    border-width:1px;
+    border-radius: 7px;
+    display:inline;
+    
+}
