@@ -51,23 +51,23 @@
 			messageVar.className='message';
 			messageVar.innerHTML=window.geemails[i].body;
 			hi[i].appendChild(messageVar);
-
 		}
-		// var huh = document.getElementsByClassName('who')
-		// for(var i=0; i<huh.length; i++){
-		// 	huh[i].addEventListener('click',boom);
-			
-		// }
 		
 		function boom(){
 			var fiyah = this.querySelectorAll('.message')[0];
 			if(fiyah.style.display === 'block'){
 				fiyah.style.display ='none';
 			}else{fiyah.style.display='block'}
-			console.log('hi');	
-		
-			
+				
 		}
+		
+
+		// counter stuff
+		var count = document.getElementById('counter')
+		for(var i=0; i<window.geemails.length; i++){
+			count.innerHTML++
+		}
+
 			};
 			
 			
