@@ -89,3 +89,17 @@
     border:solid;
     border-width:1px;
 }
+
+.what{
+    border:dotted;
+    border-width:1px;
+}
+
+.when{
+    border:dashed;
+    border-width: 1px;
+}
+
+/* .message{
+    display:none;
+} */

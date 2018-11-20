@@ -10,14 +10,15 @@
 		
 			
 		// console.log(window.geemails[0]);
-		console.table(window.geemails);
+		// console.table(window.geemails);
 		for(var i=0; i<window.geemails.length; i++){
 					var hi = document.getElementById('main');
 					var whoVar = document.createElement('div');
 					whoVar.className='who';
 					whoVar.innerHTML = window.geemails[i].sender;
 					hi.appendChild(whoVar);
-					// console.table(window.geemails[i]);
+					whoVar.addEventListener('click',boom);
+				
 
 					}
 		var mail=document.getElementsByClassName('who');
@@ -43,7 +44,14 @@
 			mail[i].appendChild(messageVar);
 
 		}
-
+		
+		function boom(){
+			var fiyah = this.querySelectorAll('.who')[0];
+			if(messageVar.display === 'block'){
+				messageVar.display ='none';
+			}else{messageVar.display='block'}
+			
+		}
 			};
 			
 			
