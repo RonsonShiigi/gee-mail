@@ -10,7 +10,7 @@
 		
 			
 		// console.log(window.geemails[0]);
-		// console.table(window.geemails);
+		console.table(window.geemails);
 		for(var i=0; i<window.geemails.length; i++){
 					var hi = document.getElementById('main');
 					var whoVar = document.createElement('div');
@@ -32,7 +32,13 @@
 			mail[i].appendChild(whatVar);
 
 		}
-			
+		var geez= document.getElementsByClassName('what');
+		for(var i=0; i<window.geemails.length; i++){
+			var whenVar=document.createElement('div');
+			whenVar.className='when';
+			whenVar.innerHTML=window.geemails[i].date
+			mail[i].appendChild(whenVar);
+		}
 			
 
 			};

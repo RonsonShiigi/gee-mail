@@ -83,3 +83,9 @@
 .typeBox:hover{
     background-color: rgb(214, 209, 209);
 }
+
+/* email box stuff */
+.who{
+    border:solid;
+    border-width:1px;
+}
