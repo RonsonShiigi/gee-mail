@@ -89,6 +89,9 @@
 }
 
 /* email box stuff */
+#main{
+    overflow-y: auto;
+}
 .who, .newWho{
     border:solid;
     border-width:1px;
@@ -106,4 +109,5 @@
 
 .message, .newMail{
     display:none;
+    
 }
