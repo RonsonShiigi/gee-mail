@@ -19,11 +19,7 @@
 					hi.appendChild(whoVar);
 					// console.table(window.geemails[i]);
 
-					
-
-					
-
-		}
+					}
 		var mail=document.getElementsByClassName('who');
 		for(var i=0; i<window.geemails.length; i++){
 			var whatVar= document.createElement('div');
@@ -39,7 +35,14 @@
 			whenVar.innerHTML=window.geemails[i].date
 			mail[i].appendChild(whenVar);
 		}
-			
+
+		for(var i=0; i<window.geemails.length; i++){
+			var messageVar= document.createElement('div');
+			messageVar.className='message';
+			messageVar.innerHTML=window.geemails[i].body;
+			mail[i].appendChild(messageVar);
+
+		}
 
 			};
 			
