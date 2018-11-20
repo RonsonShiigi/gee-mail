@@ -11,6 +11,13 @@
 			
 		// console.log(window.geemails[0]);
 		// console.table(window.geemails);
+
+		
+		
+		
+
+
+
 		for(var i=0; i<window.geemails.length; i++){
 			var boxIt=document.createElement('div');
 			boxIt.className='box';
@@ -38,6 +45,8 @@
 			messageVar.innerHTML=window.geemails[i].body;
 			hi[i].appendChild(messageVar);
 
+			
+
 
 		}
 		function boom(){
@@ -58,7 +67,18 @@
 		
 		function poofMessage(){
 			var newStuff = getNewMessage()
-			console.log(newStuff)
+			// window.geemails.push(newStuff)
+			var newMessageBox = document.createElement('div');
+			newMessageBox.className='newMessage';
+			main.appendChild(newMessageBox);
+
+			var newSender = document.createElement('div');
+			newSender.className='newWho';
+			newSender.innerHTML=newStuff.sender;
+			newMessageBox.appendChild(newSender);
+			
+
+			
 		}
 		setInterval(poofMessage,1000);
 		
