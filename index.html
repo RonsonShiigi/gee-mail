@@ -70,14 +70,17 @@
 		
 		// get new message shite
 		
-		// var onward = setInterval(getNewMessage,1000);
 		var newStuff = getNewMessage();
-		function fuck(){
-			window.geemails.push(newStuff);
-		}
+		// function confused(){
+		// 	window.geemails.push(newStuff);
+		// 	getNewMessage();
+		// 	console.log(window.geemails)
+		// }
 		
-		fuck();
-		console.table(window.geemails);
+		setInterval(newStuff,1000);
+		console.table(newStuff);
+		
+		
 
 
 
