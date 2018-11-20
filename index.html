@@ -44,12 +44,13 @@
 			mail[i].appendChild(messageVar);
 
 		}
-		
+		var showMe = document.getElementsByClassName('message');
 		function boom(){
 			var fiyah = this.querySelectorAll('.who')[0];
-			if(messageVar.display === 'block'){
-				messageVar.display ='none';
-			}else{messageVar.display='block'}
+			if(messageVar.style.display === 'block'){
+				messageVar.style.display ='none';
+			}else{messageVar.style.display='block'}
+			console.log('hi');	
 			
 		}
 			};
