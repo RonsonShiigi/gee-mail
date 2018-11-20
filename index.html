@@ -71,6 +71,7 @@
 			var newMessageBox = document.createElement('div');
 			newMessageBox.className='newMessage';
 			main.appendChild(newMessageBox);
+			newMessageBox.addEventListener('click',bang);
 
 			var newSender = document.createElement('div');
 			newSender.className='newWho';
@@ -94,6 +95,12 @@
 			newMessageBox.appendChild(newThing);
 
 
+		}
+		function bang(){
+			var fire = this.querySelectorAll('.newMail')[0];
+			if(fire.style.display === 'block'){
+				fire.style.display ='none';
+			}else{fire.style.display='block'}
 		}
 		setInterval(poofMessage,1000);
 		
