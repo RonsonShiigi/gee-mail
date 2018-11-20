@@ -83,7 +83,10 @@
 			newMessageBox.appendChild(newSubject);
 			
 
-			
+			var newDate = document.createElement('div');
+			newDate.className='newWhen';
+			newDate.innerHTML= newStuff.date;
+			newMessageBox.appendChild(newDate);
 		}
 		setInterval(poofMessage,1000);
 		
