@@ -15,11 +15,24 @@
 					var hi = document.getElementById('main');
 					var whoVar = document.createElement('div');
 					whoVar.className='who';
-					whoVar.innerHTML = window.geemails[i].date;
+					whoVar.innerHTML = window.geemails[i].sender;
 					hi.appendChild(whoVar);
-					console.table(window.geemails[i]);
+					// console.table(window.geemails[i]);
 
-				}
+					
+
+					
+
+		}
+		var mail=document.getElementsByClassName('who');
+		for(var i=0; i<window.geemails.length; i++){
+			var whatVar= document.createElement('div');
+			whatVar.className='what';
+			whatVar.innerHTML=window.geemails[i].subject;
+			hi.appendChild(whatVar);
+
+		}
+			
 			
 
 			};
