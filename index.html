@@ -7,16 +7,19 @@
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
 			
+		
+			
+		// console.log(window.geemails[0]);
+		// console.table(window.geemails);
 		for(var i=0; i<window.geemails.length; i++){
 					var hi = document.getElementById('main');
 					var whoVar = document.createElement('div');
 					whoVar.className='who';
-					whoVar.innerHTML = window.geemails[i];
+					whoVar.innerHTML = window.geemails[i].date;
 					hi.appendChild(whoVar);
+					console.table(window.geemails[i]);
 
 				}
-			
-		console.log(window.geemails[0]);
 			
 
 			};
