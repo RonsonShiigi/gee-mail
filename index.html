@@ -6,10 +6,23 @@
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-        
+			
+		for(var i=0; i<window.geemails.length; i++){
+					var hi = document.getElementById('main');
+					var whoVar = document.createElement('div');
+					whoVar.className='who';
+					whoVar.innerHTML = window.geemails[i];
+					hi.appendChild(whoVar);
+
+				}
+			
+		console.log(window.geemails[0]);
+			
+
 			};
 			
-			console.log(window.geemails[0]);
+			
+			
     </script>
 	</head>
 	<body>
@@ -45,7 +58,7 @@
 			<div class="typeBox">Spam</div>
 		</div>
 		<div class="container" id="main">
-			Build Me!
+			
 		</div>
 	</body>
 </html>
