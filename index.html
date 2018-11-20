@@ -12,12 +12,21 @@
 		// console.log(window.geemails[0]);
 		// console.table(window.geemails);
 		for(var i=0; i<window.geemails.length; i++){
-					var hi = document.getElementById('main');
+			var boxIt=document.createElement('div');
+			boxIt.className='box';
+			main.appendChild(boxIt);
+			boxIt.addEventListener('click',boom);
+
+
+		}
+		
+		for(var i=0; i<window.geemails.length; i++){
+					var hi = document.getElementsByClassName('box');
 					var whoVar = document.createElement('div');
 					whoVar.className='who';
 					whoVar.innerHTML = window.geemails[i].sender;
-					hi.appendChild(whoVar);
-					whoVar.addEventListener('click',boom);
+					hi[i].appendChild(whoVar);
+					
 				
 
 					}
@@ -26,7 +35,7 @@
 			var whatVar= document.createElement('div');
 			whatVar.className='what';
 			whatVar.innerHTML=window.geemails[i].subject;
-			mail[i].appendChild(whatVar);
+			hi[i].appendChild(whatVar);
 
 		}
 		var geez= document.getElementsByClassName('what');
@@ -34,23 +43,30 @@
 			var whenVar=document.createElement('div');
 			whenVar.className='when';
 			whenVar.innerHTML=window.geemails[i].date
-			mail[i].appendChild(whenVar);
+			hi[i].appendChild(whenVar);
 		}
 
 		for(var i=0; i<window.geemails.length; i++){
 			var messageVar= document.createElement('div');
 			messageVar.className='message';
 			messageVar.innerHTML=window.geemails[i].body;
-			mail[i].appendChild(messageVar);
+			hi[i].appendChild(messageVar);
 
 		}
-		var showMe = document.getElementsByClassName('message');
+		// var huh = document.getElementsByClassName('who')
+		// for(var i=0; i<huh.length; i++){
+		// 	huh[i].addEventListener('click',boom);
+			
+		// }
+		var showMe = document.getElementsByClassName('box');
 		function boom(){
-			var fiyah = this.querySelectorAll('.who')[0];
-			if(messageVar.style.display === 'block'){
-				messageVar.style.display ='none';
-			}else{messageVar.style.display='block'}
+			for(var i=0; i<messageVar.length;i++){
+			var fiyah = this.querySelectorAll('.box')[0];
+			if(messageVar[i].style.display === 'block'){
+				messageVar[i].style.display ='none';
+			}else{messageVar[i].style.display='block'}
 			console.log('hi');	
+		}
 			
 		}
 			};
