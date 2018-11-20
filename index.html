@@ -67,6 +67,19 @@
 		for(var i=0; i<window.geemails.length; i++){
 			count.innerHTML++
 		}
+		
+		// get new message shite
+		
+		// var onward = setInterval(getNewMessage,1000);
+		var newStuff = getNewMessage();
+		function fuck(){
+			window.geemails.push(newStuff);
+		}
+		
+		fuck();
+		console.table(window.geemails);
+
+
 
 			};
 			
