@@ -17,42 +17,29 @@
 			main.appendChild(boxIt);
 			boxIt.addEventListener('click',boom);
 
-
-		}
-		
-		for(var i=0; i<window.geemails.length; i++){
-					var hi = document.getElementsByClassName('box');
-					var whoVar = document.createElement('div');
-					whoVar.className='who';
-					whoVar.innerHTML = window.geemails[i].sender;
-					hi[i].appendChild(whoVar);
-					
-				
-
-					}
-		var mail=document.getElementsByClassName('who');
-		for(var i=0; i<window.geemails.length; i++){
+			var hi = document.getElementsByClassName('box');
+			var whoVar = document.createElement('div');
+			whoVar.className='who';
+			whoVar.innerHTML = window.geemails[i].sender;
+			hi[i].appendChild(whoVar);
+			
 			var whatVar= document.createElement('div');
 			whatVar.className='what';
 			whatVar.innerHTML=window.geemails[i].subject;
 			hi[i].appendChild(whatVar);
 
-		}
-		var geez= document.getElementsByClassName('what');
-		for(var i=0; i<window.geemails.length; i++){
 			var whenVar=document.createElement('div');
 			whenVar.className='when';
 			whenVar.innerHTML=window.geemails[i].date
 			hi[i].appendChild(whenVar);
-		}
-
-		for(var i=0; i<window.geemails.length; i++){
+			
 			var messageVar= document.createElement('div');
 			messageVar.className='message';
 			messageVar.innerHTML=window.geemails[i].body;
 			hi[i].appendChild(messageVar);
+
+
 		}
-		
 		function boom(){
 			var fiyah = this.querySelectorAll('.message')[0];
 			if(fiyah.style.display === 'block'){
@@ -60,8 +47,6 @@
 			}else{fiyah.style.display='block'}
 				
 		}
-		
-
 		// counter stuff
 		var count = document.getElementById('counter')
 		for(var i=0; i<window.geemails.length; i++){
