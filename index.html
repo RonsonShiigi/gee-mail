@@ -88,7 +88,12 @@
 			newDate.innerHTML= newStuff.date;
 			newMessageBox.appendChild(newDate);
 
-			
+			var newThing = document.createElement('div');
+			newThing.className='newMail';
+			newThing.innerHTML= newStuff.body;
+			newMessageBox.appendChild(newThing);
+
+
 		}
 		setInterval(poofMessage,1000);
 		
