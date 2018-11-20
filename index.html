@@ -70,15 +70,16 @@
 		
 		// get new message shite
 		
-		var newStuff = getNewMessage();
-		// function confused(){
-		// 	window.geemails.push(newStuff);
-		// 	getNewMessage();
-		// 	console.log(window.geemails)
-		// }
 		
-		setInterval(newStuff,1000);
-		console.table(newStuff);
+		function poofMessage(){
+			var newStuff = getNewMessage()
+			console.log(newStuff)
+		}
+		setInterval(poofMessage,1000);
+		
+		
+		
+		
 		
 		
 
