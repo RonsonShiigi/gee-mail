@@ -58,15 +58,14 @@
 		// 	huh[i].addEventListener('click',boom);
 			
 		// }
-		var showMe = document.getElementsByClassName('box');
+		
 		function boom(){
-			for(var i=0; i<messageVar.length;i++){
-			var fiyah = this.querySelectorAll('.box')[0];
-			if(messageVar[i].style.display === 'block'){
-				messageVar[i].style.display ='none';
-			}else{messageVar[i].style.display='block'}
+			var fiyah = this.querySelectorAll('.message')[0];
+			if(fiyah.style.display === 'block'){
+				fiyah.style.display ='none';
+			}else{fiyah.style.display='block'}
 			console.log('hi');	
-		}
+		
 			
 		}
 			};
