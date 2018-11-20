@@ -89,17 +89,17 @@
 }
 
 /* email box stuff */
-.who{
+.who, .newWho{
     border:solid;
     border-width:1px;
 }
 
-.what{
+.what, .newWhat{
     border:dotted;
     border-width:1px;
 }
 
-.when{
+.when, .newWhen{
     border:dashed;
     border-width: 1px;
 }
