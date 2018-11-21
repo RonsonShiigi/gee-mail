@@ -115,16 +115,24 @@ body{
 #types{
     
     width:1050px;
-    margin-left:17%;
-    margin-top:-25%;
+    margin-left:20%;
+    margin-top:-30%;
 }
 .typeBox{
-    font-size:25px;
-    border:solid;
+    font-size:40px;
+    border-left:solid;
+    border-right:solid;
     border-width:1px;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     display:inline;
+    padding:10px;
+    margin-left:10%;
     
+}
+
+#primary{
+    color:rgb(124, 49, 49);
+    background-color:rgb(187, 182, 182);
 }
 
 #tie, #beer, #spam{
@@ -140,6 +148,7 @@ body{
 
 /* email box stuff */
 #main{
+    margin-top:10%;
     margin-left:17%;
     overflow-y: auto;
 
