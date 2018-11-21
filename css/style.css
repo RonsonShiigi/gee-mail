@@ -87,13 +87,27 @@
     margin-top:-11%;
 }
 
-/* #inbox{
-    width:40px;
-    display:inline;
-} */
+/* user box adjust */
+#userBox{
+    margin-top:3%;
+    border:solid;
+    width:200px;
+    border-width:1px;
+    padding-bottom: 20px;
+}
+#userImageTwo{
+    margin-bottom:-10%;
+    height:45px;
+    width:45px
+}
 
 /* types of email stuff */
-
+#types{
+    background-color: blue;
+    width:1050px;
+    margin-left:17%;
+    margin-top:-25%;
+}
 .typeBox{
     font-size:25px;
     border:solid;
@@ -107,9 +121,13 @@
     background-color: rgb(214, 209, 209);
 }
 
+
+
 /* email box stuff */
 #main{
+    margin-left:17%;
     overflow-y: auto;
+
 }
 .who, .newWho{
     border:solid;
