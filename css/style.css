@@ -69,7 +69,16 @@
     background-color: gray;
 }
 
+#counter{
+    /* border:solid;
+    border-width:1px; */
+    width:40px;
+    margin-left: 45%;
+    margin-top:-11%;
+}
+
 /* #inbox{
+    width:40px;
     display:inline;
 } */
 
