@@ -11,9 +11,10 @@
 }
 
 #topWord{
+    font-family: 'Acme', sans-serif;
     display:inline-block;
     font-size:35px;
-    font-family: 'Noto Sans SC', sans-serif;
+    
 }
 #bell{
     height: 50x;
@@ -33,8 +34,9 @@
     font-size:35px;
     height:500x;
     width:175px;
-    border-radius: 10px;
+    border-radius: 20px;
     border-width:3px;
+    margin-left:4%;
 }
 /* search bar stuff */
 
@@ -52,6 +54,7 @@
     height:50px;
     font-size:30px;
     font-family: 'Noto Sans SC', sans-serif;
+    border-radius:7px;
 }
 
 
