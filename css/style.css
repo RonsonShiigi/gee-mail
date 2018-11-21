@@ -13,8 +13,14 @@
 #topWord{
     display:inline-block;
     font-size:35px;
+    font-family: 'Noto Sans SC', sans-serif;
 }
-
+#bell{
+    height: 50x;
+    width: 50px;
+    margin-left:140%;
+    margin-top:-10%;
+}
 #userImage{
     height: 75px;
     width: 75px;
@@ -45,6 +51,7 @@
     width:500px;
     height:50px;
     font-size:30px;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 
