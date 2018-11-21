@@ -108,7 +108,32 @@
 		setInterval(poofMessage,3000);
 
 		
+		var socialVar = document.getElementById('social');
+		var primaryVar = document.getElementById('primary');
+		var spamVar = document.getElementById('spam');
+		socialVar.addEventListener('click',wow);
+
+		function wow(){
+			if(primaryVar.style.color === 'rgb(124,49,49)'){
+				primaryVar.style.color = 'black'
+			}else {primaryVar.style.color ='black'};
+
+			if(socialVar.style.color ==='black'){
+				socialVar.style.color = 'rgb(124,49,49)'
+			}else{socialVar.style.color='black'};
+
+			if(spamVar.style.color ==='rgb(124,49,49)'){
+				spamVar.style.color = 'black'
+			}else{spamVar.style.color='black'};
 		
+			if(primaryVar.style.backgroundColor === 'rgb(187, 182, 182)'){primaryVar.style.backgroundColor ='white'}else{primaryVar.style.backgroundColor='white'};
+
+			if(spamVar.style.backgroundColor === 'rgb(187, 182, 182)'){spam.style.backgroundColor ='white'}else{spamVar.style.backgroundColor='white'};
+
+			if(socialVar.style.backgroundColor === 'white'){socialVar.style.backgroundColor ='rgb(187, 182, 182)'}else{socialVar.style.backgroundColor='white'};
+		
+		
+		}
 		
 		
 		
