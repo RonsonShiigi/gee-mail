@@ -1,4 +1,9 @@
 
+body{
+    margin-left:auto;
+    margin-right:auto;
+    width:1275px;
+}
 /* top section bar  */
 #envelope{
     height: 75px;
