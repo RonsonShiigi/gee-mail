@@ -113,7 +113,7 @@ body{
 
 /* types of email stuff */
 #types{
-    background-color: blue;
+    
     width:1050px;
     margin-left:17%;
     margin-top:-25%;
@@ -125,6 +125,11 @@ body{
     border-radius: 7px;
     display:inline;
     
+}
+
+#tie, #beer, #spam{
+    height:30px;
+    width:30px;
 }
 
 .typeBox:hover{
