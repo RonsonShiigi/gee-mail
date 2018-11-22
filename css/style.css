@@ -151,17 +151,20 @@ body{
     margin-top:3%;
     margin-left:17%;
     overflow-y: auto;
+    font-size:15px;
 
 }
 
 .box{
-    background-color: aqua;
-    border:dashed;
-    height:85px;
+    border:solid;
+    border-width:1px;
+    border-radius: 5px;
+    padding-bottom: 10  px;
+    /* height:85px; */
     
 }
 .who, .newWho{
-    border:solid;
+    
     border-width:1px;
     margin-top:3%;
     
@@ -171,16 +174,19 @@ body{
 }
 
 .what, .newWhat{
-    border:dotted;
+    
     border-width:1px;
-    margin-left:25%;
+    margin-left:40%;
+    margin-top:-1.5%;
     
     
 }
 
 .when, .newWhen{
-    border:dashed;
+  
     border-width: 1px;
+    margin-left:80%;
+    margin-top:-3.5%;
     
 }
 
