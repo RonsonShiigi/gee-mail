@@ -203,3 +203,13 @@ body{
    width:200px;
    text-align: center;
 }
+
+/* easter eggs */
+#cheers{
+    height:400px;
+    width:auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -40%;
+}
