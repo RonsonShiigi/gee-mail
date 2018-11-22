@@ -208,8 +208,18 @@ body{
 #cheers{
     height:400px;
     width:auto;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: -40%;
+    
+    margin-left:37%;
+    margin-top: 3%;
+    display:none;
+    
+}
+#spamPic{
+    height:400px;
+    width:auto;
+    
+    margin-left:30%;
+    margin-top:-40%;
+    display:none;
+    
 }
