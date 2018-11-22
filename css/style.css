@@ -148,27 +148,48 @@ body{
 
 /* email box stuff */
 #main{
-    margin-top:10%;
+    margin-top:3%;
     margin-left:17%;
     overflow-y: auto;
 
 }
+
+.box{
+    background-color: aqua;
+    border:dashed;
+    height:85px;
+    
+}
 .who, .newWho{
     border:solid;
     border-width:1px;
+    margin-top:3%;
+    
+    
+    
+    
 }
 
 .what, .newWhat{
     border:dotted;
     border-width:1px;
+    margin-left:25%;
+    
+    
 }
 
 .when, .newWhen{
     border:dashed;
     border-width: 1px;
+    
 }
 
 .message, .newMail{
     display:none;
     
+}
+
+.who, .newWho, .what, .newWhat, .when, .newWhen{
+   width:200px;
+   text-align: center;
 }
